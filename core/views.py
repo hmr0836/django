@@ -17,3 +17,8 @@ def r(request,x1,y1):
         rang1 = range(x1, y1 + 1)
 
     return render(request,'r.html',{'rang1':rang1},)
+
+def tag_test(request):
+    ll = [2,4,6,8,10,12,2,4,6,8,10,12]
+
+    return render(request,'tag_test.html',{'ll':ll},)
